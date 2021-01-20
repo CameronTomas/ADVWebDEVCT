@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>read-todo</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        let myRequest = 'todo.json'
+
+        fetch(myRequest).then(function(response){
+            return response.json()
+        }).then(function(json){
+            console.log(json);
+            let div = document.querySelector('div');
+           
+        let htmlStr= json
+        for(let index in htmlStr){
+            div.innerHTML += `${htmlStr[index].userId} ${htmlStr[index].id} ${htmlStr[index].title} ${htmlStr[index].completed} <br>`
+            }
+       
+        let htmlcontents = div.innerHTML
+        //document.body.innerHTML = json
+        })
+      
+    </script>
+</body>
+</html>
