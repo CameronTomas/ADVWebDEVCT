@@ -11,7 +11,8 @@ hbs.registerHelper('ptag',function(num){
 app.get('/form',function(req,res){
     res.render('form.hbs')
 })
-app.get('/results',function(req,res){
-    res.render('form.hbs')
+app.post('/results',function(req,res){
+    console.log(req.body)
+    res.render('results.hbs')
 })
 console.log(randNum.rando());
