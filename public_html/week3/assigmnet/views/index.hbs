@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<nav>
+    <a href="#">index</a>
+    <a href="view.hbs">view</a>
+     <a href="update.hbs">update</a>
+     <a href="delete.hbs">delete</a>
+</nav>
+<body>
+    <form action="/saveEmployEntry" method="POST" onsubmit="checkForm()">
+            <span id="err"></span>
+            <input type="text" name="firstName" id="EmployEntry"><br>
+              <input type="text" name="lastName" id="EmployEntry"><br>
+                <input type="text" name="deparment" id="EmployEntry"><br>
+                 <input type="text" name="startDate" id="EmployEntry"><br>
+                  <input type="text" name="jobTitle" id="EmployEntry"><br>
+                   <input type="text" name="salary" id="EmployEntry"><br>
+            <button type="submit">Submit</button>
+        </form>
+</body>
+</html>
