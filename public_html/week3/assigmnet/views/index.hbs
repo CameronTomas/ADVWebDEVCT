@@ -12,6 +12,12 @@
      <a href="delete.hbs">delete</a>
 </nav>
 <body>
+    <select name="verb">
+        <option value="GET">GET</option>
+        <option value="POST">POST</option>
+        <option value="PUT">PUT</option>
+        <option value="DELETE">DELETE</option>
+    </select>
     <form action="/saveEmployEntry" method="POST" onsubmit="checkForm()">
             <span id="err"></span>
             <input type="text" name="firstName" id="EmployEntry"><br>
