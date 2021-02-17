@@ -9,7 +9,7 @@ var bodyparser = require('body-parser')
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({extended:true}))
 app.use(express.json())
-
+var indexRouter = require('./routes/index');
 //connect to mongodb using mongoose
 mongoose.connect('mongodb://localhost:27017/favoriteFood',
 {useNewUrlParser:true
