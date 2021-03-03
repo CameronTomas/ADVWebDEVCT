@@ -30,6 +30,24 @@ hbs.registerHelper('table',function(num){
     }
     return new hbs.handlebars.SafeString(msg)
 })
+hbs.registerHelper('message',function(){
+    min = Math.ceil(20);
+    max = Math.floor(50);
+    times = Math.random() * (max - min + 1) + min
+    msg2 = ``
+    for(var i = 0; i<times; i++){
+        msg2 += `<div`
+        classe = Math.random() * (2 - 1 + 1) + 1
+        if (classe == 1) {
+            msg2 += `class='shrink'>404</div>`
+            
+        }else if (classe == 2) {
+            msg2 += `class='rotate'>404</div>`
+            
+        }
+    }
+    return new hbs.handlebars.SafeString(msg2)
+})
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
