@@ -30,6 +30,7 @@ hbs.registerHelper('table',function(num){
     }
     return new hbs.handlebars.SafeString(msg)
 })
+<<<<<<< HEAD
 hbs.registerHelper('message',function(){
     min = Math.ceil(20);
     max = Math.floor(50);
@@ -48,6 +49,8 @@ hbs.registerHelper('message',function(){
     }
     return new hbs.handlebars.SafeString(msg2)
 })
+=======
+>>>>>>> 7d4afb02d0ff984eace58c5fcb819f16c70f074c
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

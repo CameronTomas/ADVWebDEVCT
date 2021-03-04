@@ -6,6 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
+<<<<<<< HEAD
 .still, .rotate, .shrink {
   color: red;
   display: inline-block;
@@ -45,3 +46,5 @@ a {
   transform: scale(1);
   }
  }
+=======
+>>>>>>> 7d4afb02d0ff984eace58c5fcb819f16c70f074c

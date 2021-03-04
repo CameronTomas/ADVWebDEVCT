@@ -4,7 +4,11 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "node app"
+=======
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> 7d4afb02d0ff984eace58c5fcb819f16c70f074c
   },
   "author": "",
   "license": "ISC",
